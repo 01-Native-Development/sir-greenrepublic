@@ -1,34 +1,27 @@
 {
-  "name": "client",
+  "name": "@example/basics",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
+    "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/prefetch": "^0.4.1",
-    "@astrojs/react": "^4.1.5",
-    "@astrojs/sitemap": "^3.2.1",
-    "@astrojs/tailwind": "^5.1.4",
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "@tailwindcss/forms": "^0.5.10",
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/react": "^19.0.7",
-    "@types/react-dom": "^19.0.3",
-    "astro": "^5.1.7",
-    "autoprefixer": "^10.4.20",
-    "axios": "^1.7.9",
-    "dotenv": "^16.4.7",
-    "postcss": "^8.5.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "tailwindcss": "^3.4.17"
+    "@astrojs/react": "^1.2.1",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^2.0.1",
+    "forward-ref": "^1.0.0",
+    "json-server": "^0.17.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^22.10.7",
-    "typescript": "^5.7.3"
+    "sass": "^1.55.0"
   }
 }
