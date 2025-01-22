@@ -1,0 +1,23 @@
+---
+import BlogLayout from '../../layouts/BlogLayout.astro';
+import { fetchBlogPage } from '../../utils/api.js';
+
+const blogData = await fetchBlogPage();
+---
+
+<BlogLayout>
+  <section class="mx-auto p-6 container">
+    <h1 class="font-bold text-3xl">{blogData.data.attributes.title}</h1>
+    <p class="mt-4">{blogData.data.attributes.description}</p>
+    <ul>
+      {blogData.data.attributes.blogs.map((blog) => (
+        <li key={blog.id} class="mb-4 p-4 border">
+          <a href={`/blog/${blog.slug}`} class="text-blue-500 hover:underline">
+            {blog.title}
+          </a>
+          <p>{blog.excerpt}</p>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BlogLayout>

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_product_reviews_product_reviews",
+  "info": {
+    "displayName": "Product Reviews",
+    "icon": "archive",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "review_Name": {
+      "type": "string",
+      "required": true
+    },
+    "review_Rating": {
+      "type": "integer",
+      "max": 5,
+      "min": 0,
+      "required": true
+    },
+    "review_Comment": {
+      "type": "richtext"
+    },
+    "review_Products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

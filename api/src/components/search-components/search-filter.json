@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_search_components_search_filters",
+  "info": {
+    "displayName": "searchFilter",
+    "icon": "search",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "searchPlaceholder": {
+      "type": "string",
+      "default": "Search Products...",
+      "regex": "^[a-zA-Z0-9\\s]*$"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "priceRange": {
+      "type": "json"
+    },
+    "searchTerm": {
+      "type": "string"
+    },
+    "sortBy": {
+      "type": "enumeration",
+      "enum": [
+        "Name ASC ",
+        "Name DESC",
+        "Price ASC",
+        "Price DESC"
+      ]
+    }
+  }
+}

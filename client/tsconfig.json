@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "ESNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "jsxImportSource": "react",
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"],
+      "@pages/*": ["src/pages/*"]
+    },
+    "types": ["astro/client"]
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./src/**/*.astro",
+    "src/**/*.json"
+  ],
+  "exclude": [
+    "node_modules/",
+    "dist/",
+    ".cache/",
+    ".tmp/",
+    "**/*.test.*"
+  ]
+}

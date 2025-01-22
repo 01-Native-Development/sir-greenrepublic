@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_order_details_orderd_products_component_s",
+  "info": {
+    "displayName": "Ordered Products",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "orderedProducts_product": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "orderedProducts_qauntity": {
+      "type": "biginteger"
+    },
+    "orderedProducts_Total": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+---
+import { useState } from 'react';
+
+// You can import your API query here to fetch results
+---
+
+{/* Modal */}
+<div class={`fixed inset-0 bg-gray-500 bg-opacity-50 flex items-center justify-center ${isModalOpen ? 'block' : 'hidden'}`}>
+  <div class="bg-white p-6 rounded-lg w-96">
+    <h2 class="font-bold text-xl">Search Products</h2>
+    
+    {/* Search Input */}
+    <input
+      type="text"
+      placeholder="Search for products..."
+      class="mt-4 p-2 border rounded w-full"
+      onInput={(e) => setSearchQuery(e.target.value)}
+      value={searchQuery}
+    />
+    
+    {/* Search Button */}
+    <button
+      class="bg-blue-500 mt-4 p-2 rounded text-white"
+      onClick={handleSearch}
+    >
+      Search
+    </button>
+    
+    {/* Close Button */}
+    <button
+      class="top-2 right-2 absolute text-gray-500"
+      onClick={() => setModalOpen(false)}
+    >
+      &times;
+    </button>
+  </div>
+</div>
+
+{/* Modal Toggle Button */}
+<button onClick={() => setModalOpen(true)} class="p-2">
+  Open Search
+</button>
+
+<script type="module">
+  let searchQuery = '';
+  let isModalOpen = false;
+
+  const handleSearch = async () => {
+    if (searchQuery) {
+      // Fetch results from API or filter locally here
+      const results = await fetch(`/api/products?search=${searchQuery}`);
+      const data = await results.json();
+      
+      // Handle results and display them here
+    }
+  };
+
+  const setModalOpen = (status) => {
+    isModalOpen = status;
+  };
+</script>

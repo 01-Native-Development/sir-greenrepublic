@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contacts",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

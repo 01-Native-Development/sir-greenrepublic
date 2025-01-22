@@ -1,0 +1,56 @@
+---
+// Import common components for layout
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
+// Define any props you may want to pass, such as page title or specific data
+const { title = 'The Green Republic', children } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to The Green Republic - Your online apothecary for premium CBD products." />
+    <meta name="keywords" content="CBD, apothecary, wellness, green republic, cannabis" />
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="Welcome to The Green Republic - Your online apothecary for premium CBD products." />
+    <meta property="og:image" content="/path/to/your/image.jpg" />
+
+    <title>{title}</title>
+    <link rel="stylesheet" href="/src/styles/globals.css" />
+  </head>
+  <body>
+    <!-- Include Navbar component -->
+    <Navbar />
+
+    <!-- Main content area where page-specific content will be injected -->
+    <main class="bg-gray-100 min-h-screen">
+      {children}
+    </main>
+
+    <!-- Include Footer component -->
+    <Footer />
+  </body>
+</html>
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  main {
+    padding: 20px; /* Adjust padding here */
+  }
+</style>

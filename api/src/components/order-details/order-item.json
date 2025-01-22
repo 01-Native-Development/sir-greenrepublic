@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_order_details_order_items",
+  "info": {
+    "displayName": "Order Item",
+    "icon": "chartCircle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "order_id": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "order_CustomerName": {
+      "type": "string",
+      "required": true
+    },
+    "order_CustomerEmail": {
+      "type": "email",
+      "required": true
+    },
+    "order_ProductsOrdered": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { fetchShopPage } from '../../utils/api.js';
+
+const shopData = await fetchShopPage();
+---
+
+<Layout>
+  <section class="mx-auto p-6 container">
+    <h1 class="font-bold text-3xl">{shopData.data.attributes.title}</h1>
+    <p class="mt-4">{shopData.data.attributes.description}</p>
+    <ul>
+      {shopData.data.attributes.products.map((product) => (
+        <li key={product.id}>
+          <a href={`/shop/${product.id}`} class="block p-4 border">
+            {product.name} - ${product.price}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Layout>

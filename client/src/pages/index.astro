@@ -1,0 +1,15 @@
+---
+import { fetchHomePage } from '../utils/api.js';
+import Layout from '../layouts/Layout.astro';
+import Banner from '@components/Banner'
+const homeData = await fetchHomePage();
+
+---
+
+<Layout>
+  <Banner image={homeData.data.attributes.banner_image.url} />
+  <div class="container">
+    <h1>{homeData.data.attributes.title}</h1>
+    <p>{homeData.data.attributes.description}</p>
+  </div>
+</Layout>

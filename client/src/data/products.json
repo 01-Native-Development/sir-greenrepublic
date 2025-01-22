@@ -1,0 +1,80 @@
+[
+	{
+	  "name": "CBD Relaxation Gummies",
+	  "category": "edibles",
+	  "description": "Delicious gummies infused with premium CBD to help you relax.",
+	  "price": 19.99,
+	  "oldPrice": 24.99,
+	  "image": "https://lh3.googleusercontent.com/pw/AP1GczPTTQ9heyOMKq4YRPG9lLXmhXL43N3sRHjZ2p0XWbO2BXR6YCcKL8tYO4fbYxv7QknkH4pVjdDv6x0iNwM5Z_PkLelCQ43DQT_ndov4SBCfh95BQmwYG_uh3gwrLoEFrzL6T-JDIWRsCN5SVKLZEkO79Q=w297-h301-s-no-gm?authuser=0",
+	  "color": "Berry Bliss",
+	  "rating": 3
+	},
+	{
+	  "name": "Herbal THC Cookie Blend",
+	  "category": "edibles",
+	  "description": "Relaxing herbal cookies blend infused with THC for a mellow experience.",
+	  "price": 14.99,
+	  "oldPrice": 19.99,
+	  "image": "https://lh3.googleusercontent.com/pw/AP1GczOiXsNa76ITTW-VqVK6BD1awqgxrYdS6-k7IW4C6l_Jq6hXVkH2SPQ-Bm5nYEpR33UadE2ECp0f5dkGQgzcw1fxDz3LEJpxSfq__SJdg8s1bTpdsv7RAmGVrUYd_ELBccg_DK3tluj87O_Qt6DYahXFSA=w266-h244-s-no-gm?authuser=0",
+	  "color": "Golden Chamomile",
+	  "rating": 3
+	},
+	{
+	  "name": "THC-Infused Chocolate Bar",
+	  "category": "edibles",
+	  "description": "Rich dark chocolate infused with THC for a delightful treat.",
+	  "price": 24.99,
+	  "image": "https://lh3.googleusercontent.com/pw/AP1GczNJBakWIYxcebe9iiiXAVCGQkjPv2715dtOJHwWnOHFpYKMvf5Uq1JelOo4g9DssBADRxxktMqjj9mrwdlQ8I6O2O_XJQ_DyBZhK84EWfuQmFp_FKBUgbP1A05FrDLvWHPHwUJARxa2k6lz7AchgM_WhQ=w209-h236-s-no-gm?authuser=0",
+	  "color": "Midnight Cocoa",
+	  "rating": 3
+	},
+	{
+	  "name": "Recreational THC Gummies",
+	  "category": "edibles",
+	  "description": "Fun and potent gummies for a recreational experience.",
+	  "price": 19.99,
+	  "oldPrice": 24.99,
+	  "image": "https://lh3.googleusercontent.com/pw/AP1GczPOCMdyXddKtY0kPshWPs-rAaBuIdRtTvftmqI8WDelU13qDuHLOtZaYUek17kD-xf3AfEzTJw-C6ZZnJr6W8FHm_gTA2O7zlWOUliZVgoIKoHjZd7yxj78I4GkGFlnF8T2ZJQQXwbbVQIMbqHrdrsFsQ=w296-h327-s-no-gm?authuser=0",
+	  "color": "Sour Apple Glow",
+	  "rating": 3
+	},
+	{
+	  "name": "CBD Fudge - Lavender",
+	  "category": "CBD",
+	  "description": "Relax with this smooth CBD-infused lavender fudge.",
+	  "price": 29.99,
+	  "image": "https://lh3.googleusercontent.com/pw/AP1GczPBUZEQl9ZaTotM-i5OUXcHvPkoC8U8r20Rf9_bnRUHg_OuL9iLHHA2hLM-yi_mkn_EFJJj3xFKU1W8dYAb1yxyK3dXwzQ11yWhuf95vneXzZobi2JW4Wcjs9ljO9uh4E-J6yavWcBIxSqdVP2bsCbCOw=w396-h339-s-no-gm?authuser=0",
+	  "color": "Lavender Mist",
+	  "rating": 3
+	},
+	{
+	  "name": "CBD Chocolate - Pineapple",
+	  "category": "CBD",
+	  "description": "A refreshing CBD-infused chocolate with a tropical pineapple express flavor.",
+	  "price": 34.99,
+	  "image": "https://lh3.googleusercontent.com/pw/AP1GczOvvQK81h6mVm32_ZD3tR1umzSZ9GasSCYSByn-2HHx5sLeU7kl2A0Nu0pdRRpds0fINGmRQV-AO-JYwejmPty6bTy_pwdM5rHmASVkNekjOE4yoIq6dlVYnDqobog4iJTrteoH-zMpq2xe7D90EzOqAA=w312-h263-s-no-gm?authuser=0",
+	  "color": "Tropical Gold",
+	  "rating": 3
+	},
+	{
+	  "name": "Portable THC Vape Pen",
+	  "category": "vapes",
+	  "description": "Convenient and portable disposable vape pen for a smooth THC experience.",
+	  "price": 29.99,
+	  "oldPrice": 34.99,
+	  "image": "https://lh3.googleusercontent.com/pw/AP1GczO6CeekqRBADTrLCjBT3oP4j9OmY5mFftHtyU2o2LIm66sc-fiFOMvE7uwnHkZA8kWf0o21_gDzt0ZC9uZy4lUxT6dRl8OY2QuZshGXE-6SKZhgvkp9I5gOMigSexjvnJPnPcnlSmwl_UOuoL4UwCUj=w608-h608-s-no-gm?authuser=0",
+	  "color": "Mint Spark",
+	  "rating": 3
+	},
+	{
+	  "name": "THC Blunt - Blue Haze",
+	  "category": "vapes",
+	  "description": "High-potency THC blunt concentrate for experienced users.",
+	  "price": 49.99,
+	  "oldPrice": 59.99,
+	  "image": "https://lh3.googleusercontent.com/pw/AP1GczNXk83KlFgUF_BpFC_zYOWOr0l2xBBbx0JILsrSv1bU0vfLbynTQh5WVpBFA777ZlAz9nfBXZzSINUuF58RvG7PzDf7tiC8qGRWdE_VblZqwelIcnKpOIzA5Yl0_GwNrZO_xR_lgWqtF3iwcBFZhz3B=w608-h608-s-no-gm?authuser=0",
+	  "color": "Blue Haze",
+	  "rating": 3
+	}
+  ]
+  

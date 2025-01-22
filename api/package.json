@@ -1,0 +1,42 @@
+{
+  "name": "api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "deploy": "strapi deploy",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "5.8.0",
+    "@strapi/plugin-users-permissions": "5.8.0",
+    "@strapi/strapi": "^5.8.0",
+    "axios": "^1.7.9",
+    "better-sqlite3": "^11.3.0",
+    "glob": "^11.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.0.0",
+    "rimraf": "^6.0.1",
+    "strapi-geodata": "^0.1.2",
+    "styled-components": "^6.0.0",
+    "webpack": "^5.97.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "style-loader": "^2.0.0",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=18.x.x",
+    "npm": ">=8.0.0"
+  },
+  "strapi": {
+    "uuid": "8366e68f-54f4-495f-8173-43919344f96f"
+  }
+}

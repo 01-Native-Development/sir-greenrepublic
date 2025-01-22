@@ -1,0 +1,35 @@
+{
+  "kind": "singleType",
+  "collectionName": "shop_pages",
+  "info": {
+    "singularName": "shop-page",
+    "pluralName": "shop-pages",
+    "displayName": "Shop Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    }
+  }
+}

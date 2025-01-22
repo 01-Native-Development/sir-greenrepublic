@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "order_id": {
+      "type": "uid"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "orders"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "orders"
+    },
+    "total_amount": {
+      "type": "decimal"
+    },
+    "order_status": {
+      "type": "enumeration",
+      "enum": [
+        "Paid",
+        "Pending",
+        "Expired",
+        "Shipped",
+        "Delivered"
+      ]
+    },
+    "order_date": {
+      "type": "datetime"
+    },
+    "payment_method": {
+      "type": "enumeration",
+      "enum": [
+        "Mobi_Cred",
+        "PayPal",
+        "instant EFT",
+        "SnapScan",
+        "PayFlex",
+        "Debit Card"
+      ]
+    },
+    "payment_status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Completed",
+        "Failed"
+      ]
+    },
+    "shipping_address": {
+      "type": "richtext"
+    },
+    "transaction_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_product_details_product_details",
+  "info": {
+    "displayName": "Product Details",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "product_Name": {
+      "type": "string"
+    },
+    "product_Description": {
+      "type": "richtext"
+    },
+    "product_Price": {
+      "required": true,
+      "type": "decimal"
+    },
+    "product_Discount": {
+      "type": "decimal"
+    },
+    "product_Images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "product_SKU": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "product_Stock": {
+      "type": "biginteger",
+      "required": true
+    },
+    "product_Category": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "product_Tags": {
+      "type": "text"
+    },
+    "product_Featured": {
+      "type": "boolean"
+    }
+  }
+}

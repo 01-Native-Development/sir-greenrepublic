@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_category_component_category_components",
+  "info": {
+    "displayName": "Category Component",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "categoryName": {
+      "type": "string",
+      "required": true
+    },
+    "category_Description": {
+      "type": "richtext"
+    },
+    "category_Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
