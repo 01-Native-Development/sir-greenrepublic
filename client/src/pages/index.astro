@@ -75,15 +75,15 @@ data.orders.forEach((order) => {
   document.getElementById('heart1').addEventListener("click", toggleHeart);
 </script>
 
-<Layout title="Astro Ecommerce">
+<Layout title="The Green Republic">
 	<main>
     <Navbar />
-    <div class="container mt-5">
+    <div class="mt-5 mt-5 cont">
       <h3>Product Lists</h3>
       <p>Components and blocks for Product Lists</p>
-      <div class="row mt-5">
+      <div class="row row">
         {data.products.map(product => 
-          <div class="col-md-6 col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <CardProduct 
               thumb_src = {product.thumb_src}
               thumb_alt = {product.thumb_alt}
@@ -102,7 +102,7 @@ data.orders.forEach((order) => {
       <p>Cards with full details</p>
       <div class="row">
         {data.products.map(product => 
-          <div class="col-md-6 col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <CardProduct 
               thumb_src = {product.thumb_src}
               thumb_alt = {product.thumb_alt}
@@ -117,13 +117,13 @@ data.orders.forEach((order) => {
         )}        
       </div>
 
-      <div class="row mb-8">
-        <div class="d-block text-center mb-5">
+      <div class="row row">
+        <div class="d-block mb-5 mb-5 text-c">
           <h3>Shop by category</h3>
-          <a class="text-dark font-weight-bold" href="#">Browse all categories &#62;</a>
+          <a class="text-dark text-dark t-bold" href="#">Browse all categories &#62;</a>
         </div>
         {data.categories.slice(0, 4).map(category => 
-          <div class="col-md-6 col-lg-3">
+          <div class="col-lg-3 col-md-6">
             <CardCategory
               thumb_src = {category.thumb_src}
               title = {category.title}
@@ -133,10 +133,10 @@ data.orders.forEach((order) => {
         )}
       </div>
 
-      <div class="row mb-5">
-        <div class="d-block text-center mb-5">
+      <div class="row row">
+        <div class="d-block mb-5 mb-5 text-c">
           <h3>Shop by category</h3>
-          <a class="text-dark font-weight-bold" href="#">Browse all categories &#62;</a>
+          <a class="text-dard text-kark t-bold" href="#">Browse all categories &#62;</a>
         </div>
         <div class="col-md-6">
           <CardCategory
@@ -269,12 +269,12 @@ data.orders.forEach((order) => {
 
       <div class="my-10">
         <h3 class="mt-5">Complex Navbar White</h3>
-        <a class="text-dark font-weight-bold" href="#">Browse all categories &#62;</a>
+        <a class="text-dard text-kark t-bold" href="#">Browse all categories &#62;</a>
         <br/><br/>
         <ComplexNavbar />
-        <div class="row mt-4">
+        <div class="row row">
           {data.products.map(product => 
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-lg-3 col-md-6">
               <CardProduct
                 thumb_src = {product.thumb_src}
                 thumb_alt = {product.thumb_alt}
@@ -286,12 +286,12 @@ data.orders.forEach((order) => {
         </div>
 
         <h3 class="mt-5">Complex Navbar Dark</h3>
-        <a class="text-dark font-weight-bold" href="#">Browse all categories &#62;</a>
+        <a class="text-dard text-kark t-bold" href="#">Browse all categories &#62;</a>
         <br/><br/>
         <ComplexNavbarDark />
-        <div class="row mt-4">
+        <div class="row row">
           {data.products.map(product => 
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-lg-3 col-md-6">
               <CardProduct
                 thumb_src = {product.thumb_src}
                 thumb_alt = {product.thumb_alt}

@@ -34,10 +34,10 @@ export default [
       },
     },
   },
-  {
+  { 
     name: 'strapi::cors',  // Ensure 'strapi::cors' is added after security middleware
     config: {
-      origin: ['http://localhost:4321'],  // Replace with your Astro frontend URL
+      origin: ['http://localhost:4321/astro-ecommerce'],  // Replace with your Astro frontend URL
       headers: '*',  // Allow all headers (adjust if needed)
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],  // Allowed methods
     },

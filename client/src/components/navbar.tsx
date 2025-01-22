@@ -1,45 +1,44 @@
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg blur border-radius-sm top-0 z-index-3 shadow position-sticky py-3 start-0 end-0">
-      <div className="container px-1">
-        <a className="navbar-brand font-weight-bolder ms-lg-0 " href="https://www.creative-tim.com/astro">Astro Ecommerce</a>
-        <button className="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon mt-2">
-            <span className="navbar-toggler-bar bar1"></span>
-            <span className="navbar-toggler-bar bar2"></span>
-            <span className="navbar-toggler-bar bar3"></span>
+    <nav className="top-0 z-index-3 position-sticky shadow blur py-3 border-radius-sm end-0 navbar navbar-expand-lg start-0">
+      <div className="px-1 container">
+        <a className="font-weight-bolder ms-lg-0 navbar-brand" href="https://www.creative-tim.com/astro">Astro Ecommerce</a>
+        <button className="shadow-none ms-2 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="mt-2 navbar-toggler-icon">
+            <span className="bar1 navbar-toggler-bar"></span>
+            <span className="bar2 navbar-toggler-bar"></span>
+            <span className="bar3 navbar-toggler-bar"></span>
           </span>
         </button>
         <div className="collapse navbar-collapse" id="navigation">
-          <ul className="navbar-nav ms-auto">
+          <ul className="ms-auto navbar-nav">
             <li className="nav-item">
-              <a className="nav-link text-dark font-weight-bold d-flex align-items-center me-2 " aria-current="page" href="/astro-ecommerce/">
+              <a className="d-flex align-items-center font-weight-bold text-dark me-2 nav-link" aria-current="page" href="/astro-ecommerce/">
                 All Components
               </a>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link text-dark dropdown-toggle font-weight-bold d-flex align-items-center me-2 " aria-current="page" id="pagesExample" data-bs-toggle="dropdown" aria-expanded="false">
-                Pages
+            <li className="dropdown nav-item">
+              <a className="d-flex align-items-center font-weight-bold text-dark dropdown-toggle me-2 nav-link" aria-current="page" id="pagesExample" data-bs-toggle="dropdown" aria-expanded="false">
+               Members 
               </a>
               <ul className="dropdown-menu" aria-labelledby="pagesExample">
-                <li><a className="dropdown-item" href="/astro-ecommerce/landing/">Landing Page</a></li>
-                <li><a className="dropdown-item" href="/astro-ecommerce/product/">Product Page</a></li>
-                <li><a className="dropdown-item" href="/astro-ecommerce/shopping-cart/">Shopping Cart</a></li>
+                <li><a className="dropdown-item" href="/astro-ecommerce/landing/">Login</a></li>
+                <li><a className="dropdown-item" href="/astro-ecommerce/product/">Register</a></li>
               </ul>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-dark font-weight-bold d-flex align-items-center me-2 " aria-current="page" href="https://www.creative-tim.com/learning-lab/astro/overview/astro-ecommerce">
+              <a className="d-flex align-items-center font-weight-bold text-dark me-2 nav-link" aria-current="page" href="https://www.creative-tim.com/learning-lab/astro/overview/astro-ecommerce">
                 Documentation
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-dark font-weight-bold d-flex align-items-center me-2 " aria-current="page" href="https://github.com/creativetimofficial/astro-ecommerce">
-                <i className="fab text-lg fa-github"></i>
+              <a className="d-flex align-items-center font-weight-bold text-dark me-2 nav-link" aria-current="page" href="https://github.com/creativetimofficial/astro-ecommerce">
+                <i className="text-lg fa-github fab"></i>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-dark font-weight-bold d-flex align-items-center me-2 " aria-current="page" href="https://discord.com/invite/TGZqBvZB" rel="nofollow" target="_blank">
-                <i className="fab text-lg fa-discord"></i>
+              <a className="d-flex align-items-center font-weight-bold text-dark me-2 nav-link" aria-current="page" href="https://discord.com/invite/TGZqBvZB" rel="nofollow" target="_blank">
+                <i className="text-lg fa-discord fab"></i>
               </a>
             </li>
           </ul>
