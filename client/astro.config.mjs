@@ -1,11 +1,15 @@
+// @ts-check
 import { defineConfig } from 'astro/config';
+import dotenv from 'dotenv';
 
-// https://astro.build/config
-import react from "@astrojs/react";
+// Load environment variables from .env file
+dotenv.config();
+
+import tailwind from '@astrojs/tailwind';
+import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
-  site: 'https://creativetimofficial.github.io',
-  base: '/astro-ecommerce'
+  integrations: [tailwind(), react()],
+  // Optional: You can add further configuration here if needed
 });

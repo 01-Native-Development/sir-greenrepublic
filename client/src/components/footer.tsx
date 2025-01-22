@@ -1,15 +1,15 @@
 export default function Footer() {
   return (
     <>
-      <footer className="footer pt-3  ">
-        <div className="row align-items-center justify-content-lg-between">
-          <div className="col-lg-6 mb-lg-0 mb-4">
-            <div className="copyright text-center text-sm text-muted text-lg-start">
+      <footer className="pt-3 footer">
+        <div className="justify-content-lg-between align-items-center row">
+          <div className="mb-4 mb-lg-0 col-lg-6">
+            <div className="copyright text-center text-lg-start text-muted text-sm">
               Copyright ©{" "}
               <script>document.write(new Date().getFullYear())</script>
-              &nbsp;Astro Ecommerce by 
+              &nbsp;The green republic by 
               <a
-                href="https://www.creative-tim.com"
+                href=""
                 className="text-dark ms-1"
                 target="_blank"
               >
@@ -19,11 +19,11 @@ export default function Footer() {
             </div>
           </div>
           <div className="col-lg-6">
-            <ul className="nav nav-footer justify-content-center justify-content-lg-end">
+            <ul className="justify-content-center justify-content-lg-end nav nav-footer">
               <li className="nav-item">
                 <a
                   href="https://www.creative-tim.com"
-                  className="nav-link text-sm text-muted"
+                  className="text-muted text-sm nav-link"
                   target="_blank"
                 >
                   Creative Tim
@@ -32,7 +32,7 @@ export default function Footer() {
               <li className="nav-item">
                 <a
                   href="https://www.creative-tim.com/presentation"
-                  className="nav-link text-sm text-muted"
+                  className="text-muted text-sm nav-link"
                   target="_blank"
                 >
                   About Us
@@ -41,7 +41,7 @@ export default function Footer() {
               <li className="nav-item">
                 <a
                   href="https://www.creative-tim.com/blog"
-                  className="nav-link text-sm text-muted"
+                  className="text-muted text-sm nav-link"
                   target="_blank"
                 >
                   Blog
@@ -50,7 +50,7 @@ export default function Footer() {
               <li className="nav-item">
                 <a
                   href="https://www.creative-tim.com/license"
-                  className="nav-link text-sm pe-0 text-muted"
+                  className="text-muted text-sm nav-link pe-0"
                   target="_blank"
                 >
                   License
